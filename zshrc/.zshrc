@@ -103,5 +103,4 @@ alias game-project="cd /mnt/d/'games i made'/PIXILART-PLATFORMER/"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export OPENAI_API_KEY="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"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
