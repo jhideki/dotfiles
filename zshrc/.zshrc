@@ -70,7 +70,7 @@ ENABLE_CORRECTION="true"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git nvm vi-mode)
+plugins=(git nvm vi-mode git zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -90,10 +90,25 @@ source $ZSH/oh-my-zsh.sh
 # Enable vi mode
 bindkey -v
 
+#Change curso shape 
+function zle-keymap-select {
+  if [[ ${KEYMAP} == vicmd ]] ||
+     [[ $1 = 'block' ]]; then
+    echo -ne '\e[1 q'
+  elif [[ ${KEYMAP} == main ]] ||
+       [[ ${KEYMAP} == viins ]] ||
+       [[ ${KEYMAP} = '' ]] ||
+       [[ $1 = 'beam' ]]; then
+    echo -ne '\e[5 q'
+  fi
+}
+zle -N zle-keymap-select
+
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 alias win-projects="cd /mnt/d/Projects"
 alias game-project="cd /mnt/d/'games i made'/PIXILART-PLATFORMER/"
+alias dotfiles="cd ~/dotfiles/"
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
@@ -103,5 +118,4 @@ alias game-project="cd /mnt/d/'games i made'/PIXILART-PLATFORMER/"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export OPENAI_API_KEY="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"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.

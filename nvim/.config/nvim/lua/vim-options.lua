@@ -7,6 +7,7 @@ vim.cmd("set number")
 
 -- SO primagen
 vim.keymap.set("x", "<leader>p", '"_dP')
+
 -- Probably controversial
 vim.keymap.set("n", "d", '"_d')
 vim.keymap.set("n", "d", '"_d')
