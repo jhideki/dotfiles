@@ -121,6 +121,3 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 . "$HOME/.cargo/env"
 
-
-#gpt key
-export OPENAI_API_KEY="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"
