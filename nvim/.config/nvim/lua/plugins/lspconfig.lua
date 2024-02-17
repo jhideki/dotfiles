@@ -71,18 +71,22 @@ return {
 		end
 
 		-- configure emmet language server
+		--[[
 		lspconfig["emmet_ls"].setup({
 			capabilities = capabilities,
 			on_attach = on_attach,
 			filetypes = { "html", "typescriptreact", "javascriptreact", "css" },
 		})
+        ]]
 
 		-- configure python server
+		--[[
 		lspconfig["pyright"].setup({
 			capabilities = capabilities,
 			on_attach = on_attach,
 			filetypes = { "python" },
 		})
+        ]]
 
 		lspconfig["rust_analyzer"].setup({
 			on_attach = on_attach,

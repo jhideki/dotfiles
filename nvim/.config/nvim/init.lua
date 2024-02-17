@@ -1,5 +1,4 @@
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
-local myfuncs = require("johnnysfunstuff")
 
 if not vim.loop.fs_stat(lazypath) then
 	vim.fn.system({
@@ -16,4 +15,5 @@ vim.opt.fileformat = "unix"
 
 require("vim-options")
 require("lazy").setup("plugins")
-myfuncs.setTheme("dracula-soft", "dark")
+
+vim.cmd("colorscheme dracula-soft")
