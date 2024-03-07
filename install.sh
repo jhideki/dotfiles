@@ -2,7 +2,7 @@
 
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 
-DOT_FOLDERS="bash,zsh,nvim"
+DOT_FOLDERS="bashrc,zshrc,nvim,tmux,zsh-themes"
 
 for folder in $(echo $DOT_FOLDERS | sed "s/,/ /g"); do
     echo "[+] Folder :: $folder"
