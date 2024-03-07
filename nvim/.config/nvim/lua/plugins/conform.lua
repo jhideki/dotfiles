@@ -12,6 +12,7 @@ return {
 				yaml = { "prettier" },
 				markdown = { "prettier" },
 				lua = { "stylua" },
+				javascript = { "prettier" },
 			},
 			format_on_save = {
 				lsp_fallback = true,
