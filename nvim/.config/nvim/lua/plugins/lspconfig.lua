@@ -91,6 +91,12 @@ return {
 			filetypes = { "rust" },
 		})
 
+		lspconfig["tsserver"].setup({
+			on_attach = on_attach,
+			capabilities = capabilities,
+			filetypes = { "typescript", "javascript" },
+		})
+
 		-- configure lua server (with special settings)
 		lspconfig["lua_ls"].setup({
 			capabilities = capabilities,

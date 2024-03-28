@@ -109,6 +109,7 @@ zle -N zle-keymap-select
 alias win-projects="cd /mnt/d/Projects"
 alias game-project="cd /mnt/d/'games i made'/PIXILART-PLATFORMER/"
 alias dotfiles="cd ~/dotfiles/"
+alias mnt="cd /mnt/c/"
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
