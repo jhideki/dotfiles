@@ -110,6 +110,10 @@ alias win-projects="cd /mnt/d/Projects"
 alias game-project="cd /mnt/d/'games i made'/PIXILART-PLATFORMER/"
 alias dotfiles="cd ~/dotfiles/"
 alias mnt="cd /mnt/c/"
+alias jhami="cd /mnt/c/Users/jhami/"
+
+export GEMINI_API_KEY="AIzaSyCDvWz5FN5E77ZecweVr3jp0IAlgghNDRQ"
+export PATH="/home/johnny/gemini-cli/target/debug:$PATH"
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
@@ -118,5 +122,6 @@ alias mnt="cd /mnt/c/"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.

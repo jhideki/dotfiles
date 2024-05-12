@@ -16,4 +16,7 @@ vim.opt.fileformat = "unix"
 require("vim-options")
 require("lazy").setup("plugins")
 
-vim.cmd("colorscheme dracula-soft")
+vim.cmd("colorscheme catppuccin")
+
+vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })

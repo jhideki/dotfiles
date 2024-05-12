@@ -94,7 +94,7 @@ return {
 		lspconfig["tsserver"].setup({
 			on_attach = on_attach,
 			capabilities = capabilities,
-			filetypes = { "typescript", "javascript" },
+			filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact" },
 		})
 
 		-- configure lua server (with special settings)
