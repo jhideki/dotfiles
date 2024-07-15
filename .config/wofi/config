@@ -1,0 +1,10 @@
+allow_images=false
+hide_scroll=true
+gtk_dark=true
+image_size=32
+width=22%
+height=30%
+prompt=Search for programs
+insensitive=true
+location=center
+no_actions=true

@@ -29,6 +29,7 @@ while true; do
         | while read -r img; do
             swww img "$img"
             wal -i "$img"
+            killall -SIGUSR2 waybar
             sleep $INTERVAL
         done
 done
