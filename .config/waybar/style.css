@@ -1,15 +1,3 @@
-/*
- * __        __          _                  ____  _         _       
- * \ \      / /_ _ _   _| |__   __ _ _ __  / ___|| |_ _   _| | ___  
- *  \ \ /\ / / _` | | | | '_ \ / _` | '__| \___ \| __| | | | |/ _ \ 
- *   \ V  V / (_| | |_| | |_) | (_| | |     ___) | |_| |_| | |  __/ 
- *    \_/\_/ \__,_|\__, |_.__/ \__,_|_|    |____/ \__|\__, |_|\___| 
- *                 |___/                              |___/         
- *  
- * by Stephan Raabe (2023) 
- * ----------------------------------------------------- 
-*/
-
 /* -----------------------------------------------------
  * Import Pywal colors 
  * ----------------------------------------------------- */
@@ -27,8 +15,15 @@
     border-radius: 0px;
 }
 
+
+button{
+    box-shadow: inset 0 -3px transparent;
+    border: none;
+    border-radius: 5px;
+}
+
 window#waybar {
-    background-color: @background; 
+    background-color: transparent; 
     border-bottom: 0px solid #ffffff;
     transition-property: background-color;
     transition-duration: .5s;
@@ -39,8 +34,8 @@ window#waybar {
  * Workspaces 
  * ----------------------------------------------------- */
 
-#workspaces {
-    background: @background;
+#workspaces{
+    background: transparent;
     margin: 5px 1px 6px 1px;
     padding: 0px 1px;
     border-radius: 15px;
@@ -55,9 +50,9 @@ window#waybar {
     border-radius: 15px;
     border: 0px;
     color: @foreground;
-    background-color: rgba(0,0,0,0.0);
+    background-color: @background;
     transition: all 0.3s ease-in-out;
-    opacity: 0.4;
+    opacity: 0.6;
 }
 
 #workspaces button.active {
@@ -75,7 +70,7 @@ window#waybar {
 
 tooltip {
     border-radius: 10px;
-    background-color: @backgroundlight;
+    background-color: @background;
     opacity:0.8;
     padding:20px;
     margin:0px;
@@ -90,12 +85,11 @@ tooltip label {
  * ----------------------------------------------------- */
 
 #window {
-    margin: 8px 15px 8px 0px;
-    padding: 2px 10px 0px 10px;
+    background-color: @background;
     border-radius: 12px;
     color:@foreground;
-    font-weight:normal;
-    opacity:0.8;
+    padding: 1px 14px 0px 14px;
+    margin: 8px 14px 8px 14px;
 }
 
 window#waybar.empty #window {
@@ -121,9 +115,10 @@ window#waybar.empty #window {
 
 #clock {
     color: @foreground;
-    padding: 1px 10px 0px 10px;
-    margin: 8px 15px 8px 0px;
-    opacity:0.8;
+    background-color: @background;
+    border-radius: 12px;
+    padding: 1px 14px 0px 14px;
+    margin: 8px 14px 8px 14px;
 }
 
 /* -----------------------------------------------------
@@ -131,16 +126,18 @@ window#waybar.empty #window {
  * ----------------------------------------------------- */
 
 #pulseaudio {
+    background-color: @background;
+    border-radius: 12px;
     color: @foreground; 
-    border-radius: 15px;
-    padding: 2px 10px 0px 10px;
-    margin: 8px 15px 8px 0px;
-    opacity:0.8;
+    padding: 1px 14px 0px 14px;
+    margin: 8px 14px 8px 14px;
 }
 
 #pulseaudio.muted {
     background-color: @backgrounddark;
     color: @forground;
+    padding: 1px 14px 0px 14px;
+    margin: 8px 15px 8px 0px;
 }
 
 /* -----------------------------------------------------
@@ -148,10 +145,11 @@ window#waybar.empty #window {
  * ----------------------------------------------------- */
 
 #network {
+    background-color: @background;
+    border-radius: 12px;
     color: @foreground;
-    padding: 2px 10px 0px 10px;
-    margin: 8px 15px 8px 0px;
-    opacity:0.8;
+    padding: 1px 14px 0px 14px;
+    margin: 8px 14px 8px 14px;
 }
 
 /* -----------------------------------------------------
@@ -160,8 +158,6 @@ window#waybar.empty #window {
 
  #bluetooth, #bluetooth.on, #bluetooth.connected {
     color: @foreground;
-    padding: 2px 10px 0px 10px;
-    margin: 8px 15px 8px 0px;
     opacity:0.8;
 }
 

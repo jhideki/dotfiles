@@ -25,6 +25,7 @@
 
     // Modules Left
     "modules-left": [
+        "clock",
         "hyprland/window",
     ],
 
@@ -37,8 +38,6 @@
     "modules-right": [
         "pulseaudio",
         "bluetooth",
-        "battery", 
-        "network",
-        "clock"
+        "network"
     ]
 }
