@@ -120,3 +120,6 @@ export PATH="$HOME/.cargo/bin:$PATH"
 neofetch
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+
+# Created by `pipx` on 2024-07-18 17:01:29
+export PATH="$PATH:/home/johnny/.local/bin"

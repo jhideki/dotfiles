@@ -89,7 +89,15 @@ return {
 			on_attach = on_attach,
 			capabilities = capabilities,
 			filetypes = { "rust" },
+			root_dir = lspconfig.util.root_pattern("Cargo.toml"),
 		})
+
+		--[[lspconfig["omnisharp"].setup({
+			on_attach = on_attach,
+			capabilities = capabilities,
+			filetypes = { "cs" },
+			cmd = { "/home/johnny/.local/share/nvim/mason/packages/omnisharp/omnisharp" },
+		})]]
 
 		lspconfig["tsserver"].setup({
 			on_attach = on_attach,

@@ -18,7 +18,7 @@ return {
 				},
 			},
 			filesystem = {
-				filtered_items = { hide_dotfiles = false },
+				filtered_items = { visible = true },
 			},
 		})
 	end,
