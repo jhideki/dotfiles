@@ -8,7 +8,7 @@
  * ----------------------------------------------------- */
 
 * {
-    font-family: "JetBrains Mono";
+    font-family: "JetBrainsMonoNLNerdFont";
     font-size: 15;
     font-weight: 500;
     border: none;
@@ -122,22 +122,35 @@ window#waybar.empty #window {
 }
 
 /* -----------------------------------------------------
+ *Battery 
+ * ----------------------------------------------------- */
+
+#battery {
+    color: @foreground;
+    background-color: @background;
+    border-radius: 12px;
+    padding: 1px 14px 0px 14px;
+    margin: 8px 14px 8px 14px;
+}
+
+/* -----------------------------------------------------
  * Pulseaudio
  * ----------------------------------------------------- */
 
 #pulseaudio {
+    color: @foreground;
     background-color: @background;
     border-radius: 12px;
-    color: @foreground; 
     padding: 1px 14px 0px 14px;
     margin: 8px 14px 8px 14px;
 }
 
 #pulseaudio.muted {
-    background-color: @backgrounddark;
-    color: @forground;
+    color: @foreground;
+    background-color: @background;
+    border-radius: 12px;
     padding: 1px 14px 0px 14px;
-    margin: 8px 15px 8px 0px;
+    margin: 8px 14px 8px 14px;
 }
 
 /* -----------------------------------------------------

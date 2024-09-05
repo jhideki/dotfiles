@@ -1,9 +1,7 @@
 #!/bin/bash
-
 DOTFILES_DIR="$HOME/dotfiles/.config"
 CONFIG_DIR="$HOME/.config"
 HOME_DIR="$HOME/dotfiles/home"
-
 # Ensure the .config directory exists
 mkdir -p "$CONFIG_DIR"
 

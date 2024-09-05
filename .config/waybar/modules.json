@@ -106,5 +106,12 @@
     "interval": 30,
     "on-click": "blueman-manager",
     "format-no-controller": ""
-  }
+  },
+"battery": {
+    "format": "{capacity}% {icon}",
+    "format-full": " {capacity}%",
+    "format-charging": " {capacity}%",
+    "format-discharging": " {capacity}%",
+    "format-plugged": " {capacity}%"
+},
 }
