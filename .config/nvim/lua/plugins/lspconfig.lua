@@ -87,6 +87,29 @@ return {
 			capabilities = capabilities,
 			filetypes = { "rust" },
 			root_dir = lspconfig.util.root_pattern("Cargo.toml"),
+			settings = {
+				["rust-analyzer"] = {
+					completion = {
+						autoself = {
+							enable = true,
+						},
+						fullFunctionSignatures = {
+							enable = true,
+						},
+						privateEditable = {
+							enable = true,
+						},
+						termSearch = {
+							enable = true,
+						},
+					},
+					cargo = {
+						features = {
+							default = "all",
+						},
+					},
+				},
+			},
 		})
 
 		lspconfig["gopls"].setup({
@@ -100,12 +123,13 @@ return {
 			filetypes = { "cs" },
 			cmd = { "/home/johnny/.local/share/nvim/mason/packages/omnisharp/omnisharp" },
 		})]]
-
+		--[[
 		lspconfig["tsserver"].setup({
 			on_attach = on_attach,
 			capabilities = capabilities,
 			filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact" },
 		})
+        --]]
 
 		-- configure lua server (with special settings)
 		lspconfig["lua_ls"].setup({
