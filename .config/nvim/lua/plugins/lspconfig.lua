@@ -76,6 +76,12 @@ return {
 			filetypes = { "html", "typescriptreact", "javascriptreact", "css" },
 		})
 
+		lspconfig["jdtls"].setup({
+			capabilities = capabilities,
+			on_attach = on_attach,
+			filetypes = { "java" },
+		})
+
 		lspconfig["pyright"].setup({
 			capabilities = capabilities,
 			on_attach = on_attach,
